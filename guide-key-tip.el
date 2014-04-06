@@ -1,4 +1,4 @@
-;;; guide-key-tip.el --- Interface of guide-key.el using pos-tip.el
+;;; guide-key-tip.el --- Show guide-key.el hints using pos-tip.el
 
 ;; Copyright (C) 2014  Hiroaki Otsu
 
@@ -23,7 +23,7 @@
 
 ;;; Commentary:
 ;; 
-;; This extension provides a interface of guide-key.el using pos-tip.el.
+;; This extension shows guide-key.el hints using pos-tip.el.
 
 ;;; Dependency:
 ;; 
@@ -75,17 +75,17 @@
 (require 'pos-tip)
 
 (defgroup guide-key-tip nil
-  "Interface of guide-key.el using pos-tip.el"
+  "Show guide-key.el hints using pos-tip.el."
   :group 'guide-key
   :prefix "guide-key-tip/")
 
 (defcustom guide-key-tip/enabled nil
-  "Whether enable to use pos-tip.el for `guide-key/popup-function'."
+  "Whether to use pos-tip.el for `guide-key/popup-function'."
   :type 'boolean
   :group 'guide-key-tip)
 
 (defface guide-key-tip/pos-tip-face '((t (:bold t)))
-  "Face for the tip of pos-tip.el"
+  "Face for the tip of pos-tip.el."
   :group 'guide-key-tip)
 
 
@@ -120,7 +120,7 @@
     (list wnd rightpt bottompt)))
 
 (defun guide-key-tip/pos-tip-show (&optional input)
-  "Popup function called after delay of `guide-key/idle-delay' second."
+  "Popup function called after delay of `guide-key/idle-delay' seconds."
   (if (or (not window-system)
           (not (featurep 'pos-tip)))
       (guide-key/popup-function input)
