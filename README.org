@@ -15,7 +15,7 @@
 
     [[file:image/demo2.png][demo2]]
 
-    - guide-key.el can not works in mini-buffer
+    - guide-key.el can not work in mini-buffer
 
     
 * Install

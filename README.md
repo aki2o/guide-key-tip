@@ -11,7 +11,7 @@ This is a extension of Emacs that provides a interface of ![guide-key.el](https:
 ### Guide key in the function of anything.el/helm.el
 
 ![demo2](image/demo2.png)
--   guide-key.el can not works in mini-buffer
+-   guide-key.el can not work in mini-buffer
 
 # Install
 
