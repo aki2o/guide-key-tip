@@ -48,13 +48,18 @@
 ;; 
 ;; [EVAL] (autodoc-document-lisp-buffer :type 'user-variable :prefix "guide-key-tip/" :docstring t)
 ;; `guide-key-tip/enabled'
-;; Not documented.
+;; Whether enable to use pos-tip.el for `guide-key/popup-function'.
 ;; 
 ;;  *** END auto-documentation
 
 ;;; API:
 ;; 
-;; Nothing
+;; [EVAL] (autodoc-document-lisp-buffer :type 'command :prefix "guide-key-tip/" :docstring t)
+;; `guide-key-tip/toggle-enable'
+;; Toggle `guide-key-tip/enabled'.
+;; 
+;;  *** END auto-documentation
+;; [Note] Functions and variables other than listed above, Those specifications may be changed without notice.
 
 ;;; Tested On:
 ;; 
@@ -154,7 +159,7 @@
 
 (defadvice guide-key/popup-function (around guide-key-tip activate)
   (if guide-key-tip/enabled
-      (apply 'guide-key-tip/pos-tip-show (ad-get-args))
+      (guide-key-tip/pos-tip-show (ad-get-arg 0))
     ad-do-it))
 
 
