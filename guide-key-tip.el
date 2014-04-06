@@ -1,4 +1,4 @@
-;;; guide-key-tip.el --- Interface of guide-key.el using pos-tip.el
+;;; guide-key-tip.el --- Show guide-key.el hints using pos-tip.el
 
 ;; Copyright (C) 2014  Hiroaki Otsu
 
