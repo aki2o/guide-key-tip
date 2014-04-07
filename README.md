@@ -17,11 +17,11 @@ This is a extension of Emacs that provides a interface of ![guide-key.el](https:
 
 ### If use package.el
 
-2014/04/06 Now application
+2014/04/07 It's available by using melpa.
 
 ### If use el-get.el
 
-2014/04/06 Now application
+2014/04/07 It's available. But, master branch only.
 
 ### If use auto-install.el
 

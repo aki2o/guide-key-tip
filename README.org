@@ -22,11 +22,11 @@
   
 *** If use package.el
 
-    2014/04/06 Now application
+    2014/04/07 It's available by using melpa.
     
 *** If use el-get.el
 
-    2014/04/06 Now application
+    2014/04/07 It's available. But, master branch only.
 
 *** If use auto-install.el
     
