@@ -1,6 +1,6 @@
 # What's this?
 
-This is a extension of Emacs that provides a interface of ![guide-key.el](https://github.com/kbkbkbkb1/guide-key) using pos-tip.el.  
+This is a extension of Emacs that provides a interface of [guide-key.el](https://github.com/kbkbkbkb1/guide-key) using pos-tip.el.  
 
 # Feature
 
