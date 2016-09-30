@@ -137,7 +137,7 @@
             (copy-face 'guide-key-tip/pos-tip-face 'pos-tip-temp)
             (when (eq (face-attribute 'pos-tip-temp :font) 'unspecified)
               (set-face-font 'pos-tip-temp (frame-parameter nil 'font)))
-            (set-face-bold-p 'pos-tip-temp (face-bold-p 'guide-key-tip/pos-tip-face))
+            (set-face-bold 'pos-tip-temp (face-bold-p 'guide-key-tip/pos-tip-face))
             (let* ((string (buffer-string))
                    (string (propertize string 'face 'pos-tip-temp))
                    (max-width (pos-tip-x-display-width))
