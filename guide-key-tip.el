@@ -70,7 +70,7 @@
 
 ;; Enjoy!!!
 
-
+(require 'cl-lib)
 (require 'guide-key)
 (require 'pos-tip)
 
@@ -126,7 +126,7 @@
       (guide-key/popup-function input)
     (let ((key-seq (or input (this-command-keys-vector)))
           (dsc-buf (current-buffer)))
-      (multiple-value-bind (wnd rightpt bottompt) (guide-key-tip--get-pos-tip-location)
+      (cl-multiple-value-bind (wnd rightpt bottompt) (guide-key-tip--get-pos-tip-location)
         (with-temp-buffer
           (setq truncate-lines t)     ; don't fold line
           (setq indent-tabs-mode nil) ; don't use tab as white space
